@@ -25,6 +25,7 @@ public class ActivityB extends AppCompatActivity {
         //TODO Go to ActivityA
         //TODO Back Back Exit
         Button b = (Button) findViewById(R.id.button);
+        b.setText("Back");
         b.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,5 +34,7 @@ public class ActivityB extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        // TODO: 1/27/2016 Activity B displaying as an option to handle the browser Action_Send
+
     }
 }
