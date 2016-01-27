@@ -1,11 +1,13 @@
 package com.example.huang.hour2app;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ActivityA extends AppCompatActivity {
 
@@ -30,5 +32,25 @@ public class ActivityA extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button getData = (Button) findViewById(R.id.button3);
+        getData.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityA.this,ActivityC.class);
+                startActivityForResult(intent,0);
+            }
+        });
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        TextView t = (TextView)findViewById(R.id.textView);
+        if (requestCode == 0 && resultCode == Activity.RESULT_OK) {
+            String enteredData = data.getStringExtra("Data");
+            t.setText(enteredData);
+        };
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    // TODO: 1/27/2016 Activity A Sharing a page from the browser 
+
 }

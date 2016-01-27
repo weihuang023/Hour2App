@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Hour2App</string>
-    <string name="go">GO</string>
+    <string name="go_b">Go</string>
+    <string name="cancel">CANCEL</string>
+    <string name="send">SEND</string>
+    <string name="go_c">Get Data</string>
 </resources>
