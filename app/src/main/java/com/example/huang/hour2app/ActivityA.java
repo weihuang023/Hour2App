@@ -17,8 +17,8 @@ public class ActivityA extends AppCompatActivity {
         setContentView(R.layout.activity_layout);
         setTitle("ActivityA");
         Button b = (Button) findViewById(R.id.button);
-        //TODO Go to ActivityB
-        //TODO Intent add data to Activity B
+        //TODO: 1/26/2016 Go to ActivityB
+        //TODO: 1/26/2016 Intent add data to Activity B
         b.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(ActivityA.this,ActivityB.class);
