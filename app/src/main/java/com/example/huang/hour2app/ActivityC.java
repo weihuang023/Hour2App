@@ -19,9 +19,11 @@ public class ActivityC extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_layout);
         setTitle("ActivityC");
+
         final EditText e = (EditText) findViewById(R.id.editText);
         Button cancel = (Button) findViewById(R.id.button1);
         Button send = (Button) findViewById(R.id.button2);
+
         send.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent result = new Intent();
@@ -30,6 +32,7 @@ public class ActivityC extends AppCompatActivity {
                 finish();
             }
         });
+
         cancel.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 setResult(Activity.RESULT_CANCELED);
