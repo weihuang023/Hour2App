@@ -29,5 +29,9 @@
             android:name=".ActivityC"
             android:label="ActivityC" >
         </activity>
+        <activity
+            android:name=".ActivityInput"
+            android:label="ActivityInput" >
+        </activity>
     </application>
 </manifest>

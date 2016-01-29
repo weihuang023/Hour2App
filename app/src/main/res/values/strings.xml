@@ -4,4 +4,6 @@
     <string name="cancel">CANCEL</string>
     <string name="send">SEND</string>
     <string name="go_c">Get Data</string>
+    <string name="add">Add</string>
+    <string name="input">Input</string>
 </resources>

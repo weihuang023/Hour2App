@@ -9,45 +9,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.huang.hour2app.ActivityA">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView2" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/go_b"
-        android:id="@+id/button"
+        android:text="@string/add"
+        android:id="@+id/button1"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:text= "@string/cancel"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/numEditText1"
+        android:inputType="number"
+        android:text="@string/add"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/numEditText2"
+        android:layout_alignStart="@+id/numEditText2"
+        android:layout_marginTop="99dp" />
 
-    <Button
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/go_c"
-        android:id="@+id/button3"
-        android:layout_below="@+id/textView2"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/input"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:id="@+id/numEditText2"
+        android:text="@string/add"
+        android:inputType="number"
+        android:layout_below="@+id/numEditText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
 
 </RelativeLayout>
