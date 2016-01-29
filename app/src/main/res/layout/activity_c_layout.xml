@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:text="@string/cancel"
         android:id="@+id/button1"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"

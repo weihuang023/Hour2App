@@ -16,6 +16,7 @@ public class ActivityInput extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input);
         setTitle("Activity Input");
+
         final EditText number1 = (EditText) findViewById(R.id.numEditText1);
         final EditText number2 = (EditText) findViewById(R.id.numEditText2);
 

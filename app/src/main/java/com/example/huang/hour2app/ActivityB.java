@@ -10,11 +10,16 @@ import android.widget.TextView;
 import android.widget.Button;
 
 public class ActivityB extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout);
+
         //TODO: 1/26/2016 TextView - "This is Activity B"
+        //TODO: 1/26/2016 Go to ActivityA
+        //TODO: 1/26/2016 Back Back Exit
+
         Intent intent = getIntent();
         Bundle bundle= intent.getBundleExtra("greetingBundle");
         String greeting = bundle.getString("greeting");
@@ -23,8 +28,7 @@ public class ActivityB extends AppCompatActivity {
         int numItems = intent.getIntExtra("numItems", 0);
         TextView t = (TextView) findViewById(R.id.textView);
         t.setText("This is Activity B: " +greeting+ " " +message+ " " +showAll+ " " +numItems);
-        //TODO: 1/26/2016 Go to ActivityA
-        //TODO: 1/26/2016 Back Back Exit
+
         Button b = (Button) findViewById(R.id.button);
         b.setText("Back");
         b.setOnClickListener(new OnClickListener() {
@@ -52,6 +56,7 @@ public class ActivityB extends AppCompatActivity {
             }
         });
     }
+
        @Override
        protected void onActivityResult(int requestCode, int resultCode, Intent data){
         TextView t = (TextView)findViewById(R.id.textView);
@@ -67,5 +72,4 @@ public class ActivityB extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
-
 }

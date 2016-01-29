@@ -11,6 +11,9 @@ import android.widget.TextView;
 
 public class ActivityA extends AppCompatActivity {
 
+    //TODO: 1/26/2016 Go to ActivityB
+    //TODO: 1/26/2016 Intent add data to Activity B
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +21,6 @@ public class ActivityA extends AppCompatActivity {
         setTitle("ActivityA");
 
         Button b = (Button) findViewById(R.id.button);
-        //TODO: 1/26/2016 Go to ActivityB
-        //TODO: 1/26/2016 Intent add data to Activity B
         b.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(ActivityA.this,ActivityB.class);
@@ -49,9 +50,7 @@ public class ActivityA extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
-
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){

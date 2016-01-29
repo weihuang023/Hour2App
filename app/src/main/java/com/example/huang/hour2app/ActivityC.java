@@ -11,6 +11,9 @@ import android.widget.Button;
 
 public class ActivityC extends AppCompatActivity {
 
+    // TODO: 1/27/2016 Add send button here
+    // TODO: 1/27/2016 Add send button here
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +24,6 @@ public class ActivityC extends AppCompatActivity {
         Button send = (Button) findViewById(R.id.button2);
         send.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                // TODO: 1/27/2016 Add send button here
                 Intent result = new Intent();
                 result.putExtra("Data", e.getText().toString());
                 setResult(Activity.RESULT_OK, result);
@@ -30,7 +32,6 @@ public class ActivityC extends AppCompatActivity {
         });
         cancel.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                // TODO: 1/27/2016 Add cancel button here
                 setResult(Activity.RESULT_CANCELED);
                 finish();
             }
